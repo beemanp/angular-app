@@ -20,4 +20,12 @@ this.name = name;
   Cal(value:string){
     this.value = (Number(value)*3)/4
   }
+
+  TestClick(){
+    console.log("testclick");
+  }
+
+  TestNumChange(value:number){
+    console.log("TestNumChange ",value);
+  }
 }
