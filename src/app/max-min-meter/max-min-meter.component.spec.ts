@@ -1,20 +1,20 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { MaxInMeterComponent } from './max-in-meter.component';
+import { MaxMinMeterComponent } from './max-min-meter.component';
 
-describe('MaxInMeterComponent', () => {
-  let component: MaxInMeterComponent;
-  let fixture: ComponentFixture<MaxInMeterComponent>;
+describe('MaxMinMeterComponent', () => {
+  let component: MaxMinMeterComponent;
+  let fixture: ComponentFixture<MaxMinMeterComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ MaxInMeterComponent ]
+      declarations: [ MaxMinMeterComponent ]
     })
     .compileComponents();
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(MaxInMeterComponent);
+    fixture = TestBed.createComponent(MaxMinMeterComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

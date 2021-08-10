@@ -12,10 +12,12 @@
 <span>คนละ {{value}} บาท</span> -->
 
 
-<div><app-action-bar (NumberChange)="TestNumChange($event)"></app-action-bar></div>
+<!-- <div><app-action-bar (NumberChange)="TestNumChange($event)"></app-action-bar></div>
 <div><app-action-bar [step]="5" (NumberChange)="TestNumChange($event)"></app-action-bar></div>
 <div><app-action-bar [step]="10" (NumberChange)="TestNumChange($event)"></app-action-bar></div>
 
 <div>
   <button type="button" (click)="TestClick()">TestEevntBinding</button>
-</div>
+</div> -->
+
+<app-max-min-meter [MinLabel]="'MyMinLabel'" [MaxLabel]="'MyMaxLabel'"></app-max-min-meter>
