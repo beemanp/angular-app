@@ -20,4 +20,54 @@
   <button type="button" (click)="TestClick()">TestEevntBinding</button>
 </div> -->
 
-<app-max-min-meter [MinLabel]="'MyMinLabel'" [MaxLabel]="'MyMaxLabel'"></app-max-min-meter>
+<!-- <app-max-min-meter 
+[MinLabel]="appMinLabel" 
+[MaxLabel]="appMaxLabel"
+
+(MinChange)="doAppMinChange($event)"
+(MaxChange)="doAppMaxChange($event)"
+>
+</app-max-min-meter> -->
+
+<!-- <app-sqaure-flex [divHeight]="sqareHeight" [divWidth]="sqareWidth"></app-sqaure-flex>
+
+<div style="margin-top: 15px;">
+  width :
+  <button type="button" (click)="sqareWidth=50">50px</button>
+  <button type="button" (click)="sqareWidth=100">100px</button>
+  <button type="button" (click)="sqareWidth=200">200px</button>
+</div>
+
+<div style="margin-top: 15px;">
+  height :
+  <button type="button" (click)="sqareHeight=50">50px</button>
+  <button type="button" (click)="sqareHeight=100">100px</button>
+  <button type="button" (click)="sqareHeight=200">200px</button>
+</div> -->
+
+<!-- <app-action-bar [(counter)]="AppCounter" [step]=10></app-action-bar>
+<app-sqaure-flex [divWidth]="AppCounter"></app-sqaure-flex> -->
+
+<!-- <div *ngIf="activate else elseTemplate">
+  <app-action-bar></app-action-bar>
+</div>
+<ng-template #elseTemplate>
+<div>
+  Activate Now
+</div>
+</ng-template>
+<button type="button" (click)="activate=true">Activate</button>
+<button type="button" (click)="TestClick()">test</button> -->
+
+<!-- <app-action-bar [inputDisplay]="false"></app-action-bar>
+<div></div>
+<app-action-bar [inputDisplay]="true"></app-action-bar> -->
+
+{{CustomerList[0]}}
+<ul>
+  <li *ngFor="let cus of CustomerList;let i=index">{{cus}} <button (click)="RemoveCustomer(i)">Remove</button></li>
+</ul>
+<div>
+  <button (click)="pushCustomer()">Push</button>
+  <button (click)="unshiftCustomer()">Unshift</button>
+</div>
