@@ -1,5 +1,6 @@
 import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
+import { BookService } from 'src/app/shared/book.service';
 import { Book } from './test-requset-get-obj';
 
 @Component({
@@ -9,10 +10,18 @@ import { Book } from './test-requset-get-obj';
 })
 export class TestRequestGetComponent implements OnInit {
  BookList:Book[] = [];
-  constructor(private http:HttpClient) { }
+  constructor(private service:BookService) { }
 
   ngOnInit(): void {
-    this.http.get<Book[]>('https://www.anapioficeandfire.com/api/books').subscribe(
+    this.service.HttpBook().subscribe(
+      Response=>{
+        this.BookList = Response;
+      }
+      );
+  }
+
+  SearchBookList(name:string){
+    this.service.HttpBook(name).subscribe(
       Response=>{
         this.BookList = Response;
       }

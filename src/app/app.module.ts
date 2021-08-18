@@ -6,7 +6,7 @@ import { AppComponent } from './app.component';
 import { ActionBarComponent } from './action-bar/action-bar.component';
 import { MaxMinMeterComponent } from './max-min-meter/max-min-meter.component';
 import { SqaureFlexComponent } from './sqaure-flex/sqaure-flex.component';
-import { HttpClientModule } from '@angular/common/http';
+import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { TestRequestModule } from './test-request/test-request.module';
 
 @NgModule({
